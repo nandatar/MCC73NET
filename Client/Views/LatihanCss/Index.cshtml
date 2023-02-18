@@ -1,0 +1,121 @@
+﻿@{
+	Layout = "_LayoutBuatan";
+}
+
+<div class="col-md-4">
+	<!-- Button trigger modal -->
+	<button type="button" class="btn bg-gradient-info btn-block" data-bs-toggle="modal" data-bs-target="#formEmployee">
+		Insert
+	</button>	
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="formEmployee" tabindex="-" role="dialog">
+	<div class="modal-dialog modal-dialog-centered modal-md" role="document">
+		<div class="modal-content">
+			<div class="modal-body p-0">
+				<div class="card card-plain">
+					<div class="card-header pb-0 text-left">
+						<h3 id="namaHeader" class="font-weight-bolder text-primary text-gradient">Insert Data</h3>			
+					</div>
+					<div class="card-body pb-3">
+						<form id="formValidation" role="form text-left" class="needs-validation" novalidate>
+							<label class="form-label">NIK</label>
+							<div class="input-group mb-3">
+								<input type="text" class="form-control" id="nik" placeholder="NIK" aria-label="Name" aria-describedby="name-addon" required>
+								<div class="valid-feedback">
+									Looks good!
+								</div>
+								<div class="invalid-feedback">
+									Please Input NIK
+								</div>
+							</div>
+							<label>First Name</label>
+							<div class="input-group mb-3">
+								<input type="text" class="form-control" id="firstName" placeholder="Name" aria-label="Name" aria-describedby="name-addon" required>
+								<div class="valid-feedback">
+									Looks good!
+								</div>
+								<div class="invalid-feedback">
+									Please Input ...
+								</div>
+							</div>
+							<label>Last Name</label>
+							<div class="input-group mb-3">
+								<input type="text" class="form-control" id="lastName" placeholder="Name" aria-label="Name" aria-describedby="name-addon" required>
+								<div class="valid-feedback">
+									Looks good!
+								</div>
+								<div class="invalid-feedback">
+									Please Input ...
+								</div>
+							</div>
+							<label>Phone Number</label>
+							<div class="input-group mb-3">
+								<input type="text" class="form-control" id="phone" placeholder="ex: 085121312" aria-label="Name" aria-describedby="name-addon" required>
+								<div class="valid-feedback">
+									Looks good!
+								</div>
+								<div class="invalid-feedback">
+									Please Input ...
+								</div>
+							</div>
+							<label>Birth Date</label>
+							<div class="input-group mb-3">
+								<input type="date" class="form-control" id="birthDate" placeholder="" aria-label="Name" aria-describedby="name-addon" required>
+							</div>
+							<label>Salary</label>
+							<div class="input-group mb-3">
+								<input type="number" class="form-control" id="salary" placeholder="ex 100000" aria-label="Email" aria-describedby="email-addon" required>
+								<div class="valid-feedback">
+									Looks good!
+								</div>
+								<div class="invalid-feedback">
+									Please Input ...
+								</div>
+							</div>
+							<label>Email</label>
+							<div class="input-group mb-3">
+								<input type="email" class="form-control" id="email" placeholder="Email" aria-label="Password" aria-describedby="password-addon" required>
+								<div class="valid-feedback">
+									Looks good!
+								</div>
+								<div class="invalid-feedback">
+									Please Input ...
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="gender">Gender</label>
+								<select class="form-control" id="gender">
+									<option value="0">Male</option>
+									<option value="1">Female</option>
+								</select>
+							</div>
+							<div class="text-center">
+								<button type="submit" id="insertButton" onclick="InsertEmployee()"  class="btn bg-gradient-primary btn-lg btn-rounded w-100 mt-4 mb-0">Insert</button>
+								<button type="submit" id="editButton" onclick="apiUpdate()" style="display:none !important" class="btn bg-gradient-primary btn-lg btn-rounded w-100 mt-4 mb-0">Edit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Tabel Employee -->
+<table id="tableEmployee" class="display">
+	<thead>
+		<tr>
+			<th>NIK</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Phone Number</th>
+			<th>Birth Date</th>
+			<th>Salary</th>
+			<th>Email</th>
+			<th>Gender</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+</table>

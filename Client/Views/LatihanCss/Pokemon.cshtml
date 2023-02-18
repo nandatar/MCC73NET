@@ -1,0 +1,141 @@
+﻿@{
+	Layout = "_Layout";
+}
+@*
+<h1 id="judul" class="mb-5">ini sebuah judul</h1>
+<div class="container">
+
+    <section id="a">
+        <p class="p1">ini sebuah paragraf ke-1</p>
+        <a href="#">ini sebuah link</a>
+        <p class="p2" onclick="berubah();">ini sebuah paragraf ke-2</p>
+        <p class="p3">ini sebuah paragraf ke-3</p>
+        <p class="p4">ini sebuah paragraf ke-4</p>
+        <div id="b">
+            <span id="a">
+                Consectetur adipiscing elit fusce vel.
+            </span>
+            <p>
+                Adipiscing elit fusce vel sapien elit.
+            </p>
+        </div>
+    </section>
+
+    <section id="b" class="section2">
+        <p>ini paragraf 5</p>
+        <ul id="a">
+            <li id="list" class="list">ini sebuah list</li>
+            <li id="list" class="list">ini sebuah list</li>
+            <li id="list" class="list">ini sebuah list</li>
+            <li id="list" class="list">ini sebuah list</li>
+        </ul>
+    </section>
+
+
+</div>
+*@
+
+<h1>List Pokemon</h1>
+
+<ul id="listPoke"></ul>
+
+
+
+<table class="table table-striped table-hover">
+	<thead class="table-dark">
+		<tr>
+			<th>No</th>
+			<th>Nama</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+	<tbody id="tablePoke">
+	</tbody>
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="modalPokeDetail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="modalLabel">Details</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="pokemon-card" style="">
+					<div class="pokemon-card__info">
+						<div class="pokemon-card__header">
+							<div class="pokemon-card__img">
+								<img src="" class="pokemon-img" alt="" style="">
+							</div>
+							<div class="pokemon-card__id" style="">#001</div>
+						</div><div class="pokemon-card__name">Bulbasaur</div>
+						<div class="pokemon-types">
+						</div>
+						<div class="pokemon-stat -height" style="">0.7m</div>
+						<div class="pokemon-stat -weight" style="">6.9kg</div>
+						<div class="pokemon-card__abilities">
+						</div>
+					</div><table class="pokemon-card__table" cellspacing="0">
+						<tbody>
+							<tr>
+								<td><strong>Hp</strong></td>
+								<td class="hp_stat">45</td>
+								<td style="">
+									<div class="pokemon-card__graph-wrapper hp">
+									</div>
+				</div>
+				</td>
+				</tr>
+				<tr>
+					<td style=""><strong style="">Attack</strong></td>
+					<td class="atk_stat">49</td>
+					<td style="">
+						<div class="pokemon-card__graph-wrapper atk">
+						</div>
+			</div>
+			</td>
+			</tr>
+			<tr>
+				<td><strong>Defense</strong></td>
+				<td class="def_stat">49</td>
+				<td style="">
+					<div class="pokemon-card__graph-wrapper def">
+					</div>
+		</div>
+		</td>
+		</tr>
+		<tr>
+			<td><strong>Special Attack</strong></td>
+			<td class="spca_stat">65</td>
+			<td style="">
+				<div class="pokemon-card__graph-wrapper spca">
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td><strong style="">Special Defense</strong></td>
+			<td class="spcd_stat">65</td>
+			<td style="">
+				<div class="pokemon-card__graph-wrapper spcd">
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Speed</strong></td>
+			<td class="spd_stat">45</td>
+			<td>
+				<div class="pokemon-card__graph-wrapper spd">
+				</div>
+			</td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div>
+		</div>
+	</div>
+</div>

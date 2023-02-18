@@ -1,0 +1,32 @@
+﻿@{
+    Layout = null;
+}
+<link rel="stylesheet" href="~/css/error-page.css" asp-append-version="true" />
+<div class="site">
+	<div class="sketch">
+		<div class="bee-sketch red"></div>
+		<div class="bee-sketch blue"></div>
+	</div>
+
+	<h1>
+		404:
+        <p>OOPS NOTHING WAS FOUND</p>
+        <a id="countdown"></a>
+	</h1>
+</div>
+<script src="/_framework/aspnetcore-browser-refresh.js"></script>
+<script>
+    let timer = 5
+    setInterval(() => {
+        document.getElementById('countdown').innerHTML = timer;
+        timer--;
+
+        if (timer === 0) {
+            location.href = "/login";
+        }
+    }, 1000)
+</script>
+</html>
+
+
+            

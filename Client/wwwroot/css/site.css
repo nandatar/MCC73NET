@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap");
+
+body {
+    color: #66625c;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.pokemon-card {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 20px 20px;
+}
+
+.pokemon-card__img {
+    align-items: center;
+    display: flex;
+    filter: drop-shadow(4px 4px 4px rgba(4, 8, 12, 0.2));
+    flex: 0 0 128px;
+    justify-content: center;
+    min-height: 96px;
+    min-width: 96px;
+}
+
+.pokemon-card__info {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 10px 10px 60px #e9e8e7;
+    flex: 0 0 300px;
+    margin:auto;
+    position: relative;
+    text-align: center;
+}
+
+.pokemon-card__header {
+    position: relative;
+}
+
+    .pokemon-card__header .pokemon-card__img {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+.pokemon-card__id {
+    color: #e9e8e7;
+    font-size: 100px;
+    font-weight: 500;
+}
+
+.pokemon-card__name {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -10px;
+    text-transform: capitalize;
+}
+
+
+.pokemon-card__abilities {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+.pokemon-card__ability {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+    .pokemon-card__ability + .pokemon-card__ability {
+        margin-left: 10px;
+    }
+
+    .pokemon-card__table td {
+        text-align: right;
+    }
+
+        .pokemon-card__table td:first-child {
+            color: #a39f99;
+        }
+
+
+.pokemon-card__graph-wrapper {
+    background-color: #e9e8e7;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 200px;
+}
+
+.pokemon-card__graph {
+    background-color: #33aeaf;
+    height: 10px;
+    position: relative;
+}
+
+    .pokemon-card__graph.-low {
+        background-color: #de4141;
+    }
+
+    .pokemon-card__graph.-medium {
+        background-color: #f59700;
+    }
+
+    .pokemon-card__graph.-high {
+        background-color: #f5c400;
+    }
+
+    .pokemon-card__graph.-epic {
+        background-color: #5a9c39;
+    }
+
+
+.pokemon-stat {
+    background-color: #ffffff;
+    border-radius: 40px;
+    box-shadow: 10px 10px 60px #e9e8e7;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 60px;
+    position: absolute;
+    top: -10px;
+    width: 60px;
+}
+
+    .pokemon-stat.-height {
+        left: -10px;
+    }
+
+    .pokemon-stat.-weight {
+        right: -10px;
+    }
+
+.pokemon-types {
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.pokemon-type {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+    .pokemon-type + .pokemon-type:before {
+        background-color: #a39f99;
+        border-radius: 50%;
+        content: '';
+        display: inline-block;
+        height: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        vertical-align: middle;
+        width: 5px;
+    }
+
+    .pokemon-type.-bug {
+        color: #9cb820;
+    }
+
+    .pokemon-type.-dragon {
+        color: #7038f8;
+    }
+
+    .pokemon-type.-fairy {
+        color: #f09ad9;
+    }
+
+    .pokemon-type.-fire {
+        color: #f08030;
+    }
+
+    .pokemon-type.-ghost {
+        color: #705898;
+    }
+
+    .pokemon-type.-ground {
+        color: #e0b668;
+    }
+
+    .pokemon-type.-normal {
+        color: #a8a8a8;
+    }
+
+    .pokemon-type.-psychic {
+        color: #eb2d77;
+    }
+
+    .pokemon-type.-steel {
+        color: #6d8f9c;
+    }
+
+    .pokemon-type.-dark {
+        color: #504843;
+    }
+
+    .pokemon-type.-electric {
+        color: #c09643;
+    }
+
+    .pokemon-type.-fighting {
+        color: #c03028;
+    }
+
+    .pokemon-type.-flying {
+        color: #9096f0;
+    }
+
+    .pokemon-type.-grass {
+        color: #22c02a;
+    }
+
+    .pokemon-type.-ice {
+        color: #98d8d8;
+    }
+
+    .pokemon-type.-poison {
+        color: #a040a0;
+    }
+
+    .pokemon-type.-rock {
+        color: #b8a038;
+    }
+
+    .pokemon-type.-water {
+        color: #6890f0;
+    }
+
+table {
+    font-size: 13px;
+    text-align: left;
+}
+
+    table td {
+        padding: 5px 10px;
+    }
+
+.excelButton {
+    background-color: #1E6C41 !important;
+    border-radius: 8px !important;
+}
+
+.pdfButton {
+    background-color: #D10909 !important;
+    border-radius: 8px !important;
+}
+
+.csvButton {
+    background-color: #41A754 !important;
+    border-radius: 8px !important;
+}
+
+.copyButton {
+    background-color: #a8a8a8 !important;
+    border-radius: 8px !important;
+}
+
+.colvisButton {
+    border-radius: 8px !important;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+#chart {
+    max-width: 650px;
+    margin: 35px auto;
+}
